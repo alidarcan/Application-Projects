@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(/assets/background.png);
+    background-image: url(assets/background.png);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -30,7 +30,7 @@ a {
 }
 
 header {
-    background-image: url(/assets/header_bg.png);
+    background-image: url(assets/header_bg.png);
     width: 100%;
     padding: 0 4em;
     display: flex;
@@ -38,7 +38,7 @@ header {
 }
 
 .logo-bg {
-    background: url(/assets/logo_plane.png) center no-repeat;
+    background: url(assets/logo_plane.png) center no-repeat;
     padding: 10px;
     margin-top: 3em;
     margin-right: 1em;
@@ -105,7 +105,7 @@ nav {
 }
 
 .carousel {
-    background: url(/assets/page_grad.png) center;
+    background: url(assets/page_grad.png) center;
     padding: 2em 4em;
     width: 100%;
 }
@@ -133,7 +133,7 @@ section {
 }
 
 .card-heading {
-    background: url(/assets/content_plane_bg.png);
+    background: url(assets/content_plane_bg.png);
     padding: 1em 1.5em 3em;
 }
 
@@ -152,7 +152,7 @@ section {
 }
 
 .content-heading {
-    background: url(/assets/dark_background.jpg);
+    background: url(assets/dark_background.jpg);
     color: white;
     font-size: 19px;
     font-weight: bold;
@@ -168,7 +168,7 @@ section {
 }
 
 .content {
-    background: url(/assets/content_plane_bg.png);
+    background: url(assets/content_plane_bg.png);
     padding: 1em 1.5em 3em;
     height: 500px;
     color: white;
@@ -195,7 +195,7 @@ section {
 }
 
 .date {
-    background: url(/assets/logo_plane.png);
+    background: url(assets/logo_plane.png);
     display: inline-block;
     line-height: 2em;
     font-size: 20px;
