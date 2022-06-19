@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 1fr 10vh;
+    margin: 0;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 148px;
+    background-color: #f4cccc;
+    height: 80vh;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 149px 1fr;
+    padding: 20px 10vw;
+    gap: 20px;
+    height: 80vh;
+}
+
+#menu {
+    display: grid;
+    height: min-content;
+}
+
+#sidebar {
+    background-color: #9fc5e8;
+    border: solid black;
+    border-width: 0 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 80vh;
+}
+
+form {
+    display: grid;
+    height: 80vh;
+    grid-template-rows: 1fr 20fr;
+    row-gap: 16px;
+}
+
+.inputAndButtons {
+    display: grid;
+    grid-template-rows: repeat(5, 3fr);
+    padding-bottom: 50px;
+    row-gap: 10px;
+}
+
+.input {
+    position: relative;
+    background-color: white;
+    height: 8vh;
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding-left: 6%;
+}
+
+input:invalid {
+    border: solid red 2px;
+    content: '✖';
+    color: red;
+}
+
+input[type=text]:valid,
+input[type=email]:valid,
+input[type=tel]:valid {
+    background-color: white;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/50/Yes_Check_Circle.svg');
+    background-position: 5px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+}
+
+#title {
+    background-color: blue;
+    color: white;
+    border: solid black 3px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12vh;
+    height: 7vh;
+}
+
+.button {
+    display: grid;
+    align-items: center;
+    background-color: #cfe2f3;
+    border-radius: 10px;
+    width: 100%;
+}
+
+#reset,
+#submit {
+    padding: 0;
+    border-width: 0;
+    width: 100%;
+    border: solid blue 2px;
+    border-radius: 10px;
+    background-color: #cfe2f3;
+    color: blue;
+    font-size: medium;
+    cursor: pointer;
+}
+
+#reset:disabled {
+    color: red;
+    opacity: 0.5;
+}
+
+#reset:disabled:hover {
+    font-size: medium;
+}
+
+.item {
+    background-color: #c27ba0;
+    color: #ffffff;
+    border: solid #5c3a4c;
+    border-width: 3px 3px 0;
+    display: grid;
+}
+
+.item:hover,
+#reset:hover,
+#submit:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: large;
+}
+
+#menu11 {
+    border-bottom: solid #5c3a4c 3px;
+}
+
+#header {
+    display: grid;
+    background-color: #ffe599;
+    border: solid black 3px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer {
+    display: grid;
+    background-color: #b6d7a8;
+    border: solid black 3px;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+
+    #main {
+        grid-template-columns: 1fr;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #content {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #reset {
+        inline-size: 50px;
+        overflow: hidden;
+        border-width: 0;
+    }
+
+    #submit {
+        inline-size: 60px;
+        overflow: hidden;
+        border-width: 0;
+    }
+
+    #buttons {
+        column-gap: 6vh;
+    }
+
+    .button {
+        border: solid blue 2px;
+        justify-items: center;
+    }
+
+    .button:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    #reset:hover,
+    #submit:hover {
+        box-shadow: none;
+        font-size: medium;
+    }
+}

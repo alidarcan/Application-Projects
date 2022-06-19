@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_flex.css">
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <div id="header">
+        <a href="index.html">HEADER (FLEX SITE)</a>
+    </div>
+    <!-- HEADER END -->
+
+    <!-- MAIN START -->
+    <div id="main">
+        <!-- CONTENT START -->
+        <div id="content">
+            <!-- FORM START -->
+
+            <form id="myForm" action="http://www.example.com/" method="post" onreset="resetUpdate()">
+                <!-- TITLE START -->
+                <div id="title">TITLE</div>
+                <!-- TITLE END -->
+
+                <!-- INPUT START -->
+                <div class="inputAndButtons">
+                    <div class="input">
+                        <input type="text" id="first_name" name="first_name" placeholder="First Name"
+                            pattern="[a-zA-Z'-'\s]*" minlength="2" oninput="myFunction()" required>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="last_name" name="last_name" placeholder="Last Name"
+                            pattern="[a-zA-Z'-'\s]*" minlength="2" oninput="myFunction()" required>
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="E-mail" oninput="myFunction()"
+                            required>
+                    </div>
+                    <div class="input">
+                        <input type="tel" id="tel" name="tel" placeholder="Phone Number" pattern="[+0-9]+"
+                            oninput="myFunction()" required>
+                    </div>
+
+                    <!-- INPUT END -->
+
+                    <!-- BUTTONS START -->
+                    <div id="buttons">
+                        <div class="button">
+                            <input id="reset" class="reset" type="reset" value="RESET BUTTON" onreset="resetUpdate()"
+                                disabled>
+                        </div>
+                        <div class="button">
+                            <input id="submit" class="submit" type="submit" value="SUBMIT BUTTON">
+                        </div>
+                        <!-- BUTTONS END -->
+
+                    </div>
+                </div>
+            </form>
+
+            <!-- FORM END -->
+
+            <!-- MENU START -->
+            <div id="menu">
+                <button id="menu1" class="menu1 item">RED</button>
+                <button id="menu2" class="menu1 item">ORANGE</button>
+                <button id="menu3" class="menu1 item">YELLOW</button>
+                <button id="menu4" class="menu1 item">GREEN</button>
+                <button id="menu5" class="menu1 item">BLUE</button>
+                <button id="menu6" class="menu1 item">PURPLE</button>
+                <button id="menu7" class="menu1 item">PINK</button>
+                <button id="menu8" class="menu1 item">CYAN</button>
+                <button id="menu9" class="menu1 item">MAGENTA</button>
+                <button id="menu10" class="menu1 item">WHITE</button>
+                <button id="menu11" class="menu1 item">GRAY</button>
+
+
+            </div>
+            <!-- MENU END -->
+        </div>
+        <!-- CONTENT END -->
+
+        <!-- SIDEBAR START -->
+        <div id="sidebar">
+            <a href="">SIDE BAR</a>
+        </div>
+        <!-- SIDEBAR END -->
+    </div>
+    <!-- MAIN END -->
+
+    <!-- FOOTER START -->
+    <div id="footer">
+        <a href="second_page.html">FOOTER(GRID SITE)</a>
+    </div>
+    <!-- FOOTER END -->
+</body>
+<script src="js/script.js"></script>
+
+</html>
